@@ -182,6 +182,10 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, DragAndDropActivity.class);
 		startActivity(intent);
 	}
+	public void onClickDragAndDropH(View view){
+		Intent intent = new Intent(this, DragAndDropHActivity.class);
+		startActivity(intent);
+	}
 	public void onStart(){
 		super.onStart();
 		Log.e(tag, "in the onStart() event");

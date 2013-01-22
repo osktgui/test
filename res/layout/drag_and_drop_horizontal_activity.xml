@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Fruta favorita?"
+	    android:gravity="center"/>
+	
+	<TextView 
+	    android:id="@+id/hoption1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/option_1"
+	    android:textStyle="bold"
+	    android:background="@drawable/option_horizontal"
+	    android:layout_margin="5dp"
+	    android:gravity="center"/>
+	
+	<TextView 
+	    android:id="@+id/hoption2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/option_2"
+	    android:textStyle="bold"
+	    android:background="@drawable/option_horizontal"
+	    android:layout_margin="5dp"
+	    android:gravity="center"/>
+	
+	<TextView 
+	    android:id="@+id/hoption3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/option_3"
+	    android:textStyle="bold"
+	    android:background="@drawable/option_horizontal"
+	    android:layout_margin="5dp"
+	    android:gravity="center"/>
+	
+	<TextView 
+	    android:id="@+id/hchoice1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:text="@string/choice_1"
+	    android:textStyle="bold"
+	    android:gravity="center"
+	    android:background="@drawable/choice_horizontal"/>
+	<TextView 
+	    android:id="@+id/hchoice2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:text="@string/choice_2"
+	    android:textStyle="bold"
+	    android:gravity="center"
+	    android:background="@drawable/choice_horizontal"/>
+	<TextView 
+	    android:id="@+id/hchoice3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:text="@string/choice_3"
+	    android:textStyle="bold"
+	    android:gravity="center"
+	    android:background="@drawable/choice_horizontal"/>
+	
+</LinearLayout>

@@ -19,7 +19,7 @@ public class DragAndDropActivity extends Activity{
 	private TextView choice1;
 	private TextView choice2;
 	private TextView choice3;
-	
+	private Object tag = null;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState); 
@@ -90,6 +90,14 @@ public class DragAndDropActivity extends Activity{
 			    	
 			    	dropTarget.setText(dropped.getText());
 			    	dropTarget.setTypeface(Typeface.DEFAULT_BOLD);
+			    	Object tag = dropTarget.getTag();
+			    	
+			    	if(tag != null){
+			    		int existingID = (Integer)tag;
+			    		findViewById(existingID).setVisibility(View.VISIBLE);
+			    		
+			    	}
+			    	dropTarget.setTag(dropped.getId());
 			        break;
 			    case DragEvent.ACTION_DRAG_ENDED:
 			        //no action necessary
