@@ -177,6 +177,11 @@ public class MainActivity extends Activity {
 		}
 		return null;
 	}
+	
+	public void onClickDragAndDrop(View view){
+		Intent intent = new Intent(this, DragAndDropActivity.class);
+		startActivity(intent);
+	}
 	public void onStart(){
 		super.onStart();
 		Log.e(tag, "in the onStart() event");
